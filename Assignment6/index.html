@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Richard Costin - Assignment 6</title>
+    <link rel="stylesheet" href="styles/Assignment6.css" >
+    <script type="text/javascript" src="js/Assignment6.js" ></script>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval'; connect-src http://bus-pluto.ad.uab.edu">
+</head>
+
+<body>
+    <div>
+        <select id="selectMenu" onchange="SelectArea(this)">
+            <option value="">Please select one</option>
+            <option value="addCustomer">Add Customer</option>
+            <option value="modifyAddress">Modify Ship-To Address</option>
+            <option value="deleteCustomer">Delete Customer</option>
+        </select>
+    </div>
+    <section id="sectionOne">
+        <table>
+            <caption>Add New Customer</caption>
+            <tr>
+                <td><label>Customer ID</label></td>
+                <td><input type="text" id="secOneCustomerID" ></td>
+            </tr>
+            <tr>
+                <td><label>Customer Name</label></td>
+                <td><input type="text" id="secOneCustomerName" ></td>
+            </tr>
+            <tr>
+                <td><label>City</label></td>
+                <td><input type="text" id="secOneCity" ></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="AddCustomer()" >Add Customer</button></td>
+            </tr>
+        </table>
+        <div id="sectionOneResult"></div>
+    </section>
+    <section id="sectionTwo">
+        <table>
+            <caption>Change the Ship To Address</caption>
+            <tr>
+                <td><label>Order Number</label></td>
+                <td><input type="text" id="secTwoOrderNumber" ></td>
+            </tr>
+            <tr>
+                <td><label>Ship To Name</label></td>
+                <td><input type="text" id="secTwoShipToName" ></td>
+            </tr>
+            <tr>
+                <td><label>Ship To Address</label></td>
+                <td><input type="text" id="secTwoShipToAddress" ></td>
+            </tr>
+            <tr>
+                <td><label>Ship To City</label></td>
+                <td><input type="text" id="secTwoShipToCity" ></td>
+            </tr>
+            <tr>
+                <td><label>Ship To Postal Code</label></td>
+                <td><input type="text" id="secTwoShipToPostalCode" ></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="EditAddress()" >Edit Address</button></td>
+            </tr>
+        </table>
+        <div id="sectionTwoResult"></div>
+
+    </section>
+    <section id="sectionThree">
+        <table>
+            <caption>Delete Customer</caption>
+            <tr>
+                <td><label>Enter a Customer ID</label></td>
+                <td><input type="text" id="secThreeCustomerID" ></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="DeleteCustomer()" >Delete Customer</button></td>
+            </tr>
+        </table>
+        <div id="sectionThreeResult"></div>
+    </section>
+    <footer>Richard Costin&nbsp;&nbsp;&nbsp;<a href="mailto:costinri@uab.edu">costinri@uab.edu</a></footer>
+
+
+</body>
+</html>

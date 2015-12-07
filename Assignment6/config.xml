@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.test.Assignment6"
+        versionCode = "10" 
+        version     = "1.1.0" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>CostinRiIS633Assign6</name>
+
+    <description>
+        IS633 - Assignment 6
+    </description>
+
+    <author href="" email="costinri@uab.edu">
+        Richard Costin
+    </author>
+    <gap:plugin name = "cordova-plugin-whitelist" source = "npm" />
+    <allow-navigation href="http://bus-pluto.ad.uab.edu" />
+    <allow-intent href="http://bus-pluto.ad.uab.edu" />
+</widget>

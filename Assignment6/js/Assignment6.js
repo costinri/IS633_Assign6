@@ -38,7 +38,9 @@ function SelectArea(selectList){
 }//end SelectArea
 
 function isUpperCase(checkString) {
-    return (checkString == checkString.toUpperCase());
+    //return (checkString == checkString.toUpperCase());
+    var regEx = new RegExp("[A-Z][A-Z][A-Z][A-Z][A-Z]")
+    return regEx.test(checkString);
 }
 
 /////////////////////////////    AddCustomer   //////////////////////////////////////////////
